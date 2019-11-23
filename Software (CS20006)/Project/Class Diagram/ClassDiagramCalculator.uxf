@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>413</x>
+      <y>14</y>
+      <w>147</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>:Calculator
+--
+# ItenMode[] : JCheckBoxMenuItem
+- modes : int
+--
++ CalcFrame() : void
+- init() : void
+- ModeAction() : void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>56</x>
+      <y>14</y>
+      <w>175</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>:ACalc
+--
+- NumBut : jButton[]
+- OprBut : jButton[]
+- BracketBut : jButton[]
+- MemoryBut : jButton[]
+- ClearBut : jButton[]
+- ShiftBut : jButton
+- PointBut : jButton
+- ans : String
+- memory : double
+- inputStr : String
+--
++ init()
++ NumericalButtonAction() : void
++ Operator() : void
++ ShiftAcion() : void
++ MemoryAction() : void
++ clearAction() : void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>154</y>
+      <w>126</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>:MCalc
+--
+- size[] : jButton[]
+- OprBut[] : jButton[]
+- NumBu[] : String
+- MemoryBut : jButton[]
+- ClearBut : jButton[]
+- ShiftBut : jButton
+- PointBut : jButton
+- ans : String
+- memory : double
+- inputStr : String
+--
+- init() : void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>504</x>
+      <y>154</y>
+      <w>126</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>:ICalc
+--
+- NumBut : jButton[]
+- OprBut : jButton[]
+- BracketBut : jButton[]
+- MemoryBut : jButton[]
+- ClearBut : jButton[]
+- ShiftBut : jButton
+- PointBut : jButton
+- varBut : jButton
+- ans : String
+- memory : double
+- inputStr : String
+- limitsBut : jButton[]
+--
+- init() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>742</x>
+      <y>35</y>
+      <w>126</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>:DCalc
+--
+- NumBut : jButton[]
+- OprBut : jButton[]
+- BracketBut : jButton[]
+- MemoryBut : jButton[]
+- ClearBut : jButton[]
+- ShiftBut : jButton
+- PointBut : jButton
+- varBut : jButton
+- ans : String
+- memory : double
+- inputStr : String
+--
+- init() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>7</x>
+      <y>252</y>
+      <w>133</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>:ACalcGUI
+--
++ NumBut : jButton[]
++ OprBut : jButton[]
++ BracketBut : jButton[]
++ MemoryBut : jButton[]
++ ClearBut : jButton[]
++ ShiftBut : jButton
++ PointBut : jButton
++ LabelDisp : JLabel
+--
+- init() : void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>161</x>
+      <y>315</y>
+      <w>154</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>:ACalcEval
+--
+--
++ infixEval(String[]) : String
+- charNum(String,Char) : int
+- OprPrecedence(String) : int
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>7</x>
+      <y>385</y>
+      <w>196</w>
+      <h>287</h>
+    </coordinates>
+    <panel_attributes>:ACalcOpr
+--
+--
++ StringOperation(Str,Str,Opr) : String
++ StringOperation(Str,Opr) : String
+- Sum(Str,Str) : String
+- Subtract(Str,Str) : String
+- Multiply(Str,Str) : String
+- Divide(Str,Str) : String
+- Power(Str,Str) : String
+- Sqrt(Str) : String
+- nPr(Str,Str) : String
+- nCr(Str,Str) : String
+- Modulus(Str,Str) : String
+- Sqre(Str) : String
+- cube(Str) : String
+- cbrt(Str) : String
+- factorial(Str) : String
+- Sin(Str) : String
+- aSin(Str) : String
+- Cos(Str) : String
+- aCos(Str) : String
+- Tan(Str) : String
+- aTan(Str) : String
+- Log10(Str) : String
+- LogE(Str) : String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>91</y>
+      <w>84</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>553</x>
+      <y>91</y>
+      <w>35</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;10.0;30.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>553</x>
+      <y>49</y>
+      <w>203</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;270.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>42</y>
+      <w>203</w>
+      <h>21</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>270.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>175</x>
+      <y>217</y>
+      <w>21</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>196</x>
+      <y>364</y>
+      <w>91</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;90.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>77</x>
+      <y>217</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>322</x>
+      <y>546</y>
+      <w>133</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>:MCalcGUI
+--
++ NumBut : jButton[]
++ OprBut : jButton[]
++ Size : jButton[]
++ MemoryBut : jButton[]
++ ClearBut : jButton[]
++ ShiftBut : jButton
++ PointBut : jButton
++ LabelDisp : JLabel
+--
+- init() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>231</x>
+      <y>462</y>
+      <w>147</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>:MCalcEval
+--
+--
++ StringHandler(String) : int
+- Multiply(A,B) : int[]
+- Add(A,B) : int[]
+- Subtract : int[]
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>350</x>
+      <y>294</y>
+      <w>21</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;240.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>392</x>
+      <y>294</y>
+      <w>21</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;360.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>469</x>
+      <y>406</y>
+      <w>133</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>:ICalcGUI
+--
++ NumBut : jButton[]
++ OprBut : jButton[]
++ BracketBut : jButton[]
++ MemoryBut : jButton[]
++ ClearBut : jButton[]
++ ShiftBut : jButton
++ PointBut : jButton
++ varBut : jButton
++ ans : String
++ memory : double
++ inputStr : String
++ limitsBut : jButton[]
+--
+- init() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>623</x>
+      <y>546</y>
+      <w>210</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>:ICalcEval
+--
+--
++ Integrate(String) : String
+- VarIntgr(String) : String
+- EvalLimit(String,double,double) : String
+- AddEvals(String[]) : String
+- ConstIntgr(String) : String
+- SinIntgr(String) : String
+- CosIntgr(String) : String
+- TanIntgr(String) : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>623</x>
+      <y>231</y>
+      <w>56</w>
+      <h>329</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;10.0;60.0;450.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>525</x>
+      <y>315</y>
+      <w>21</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>693</x>
+      <y>252</y>
+      <w>126</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>:DCalcGUI
+--
++ NumBut : jButton[]
++ OprBut : jButton[]
++ BracketBut : jButton[]
++ MemoryBut : jButton[]
++ ClearBut : jButton[]
++ ShiftBut : jButton
++ PointBut : jButton
++ varBut : jButton
++ ans : String
++ memory : double
++ inputStr : String
+--
+- init() : void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>791</x>
+      <y>448</y>
+      <w>126</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>:DCalcEval
+--
+--
++ Diff(String) : String
+- VarDiff(String) : String
+- CosDiff(String) : String
+- SinDiff(String) : String
+- TanDiff(String) : String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>749</x>
+      <y>189</y>
+      <w>21</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>840</x>
+      <y>189</y>
+      <w>21</w>
+      <h>273</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;370.0</additional_attributes>
+  </element>
+</diagram>

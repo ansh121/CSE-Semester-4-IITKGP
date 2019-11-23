@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+
+skinparam usecase {
+BackgroundColor LightGreen
+BorderColor DarkSlateGray
+ActorBorderColor black
+ArrowColor Olive
+}
+
+usecase AC as "Algebraic\nCalculator"
+usecase Read as "Read\nInput"
+usecase Disp as "Display\nResult"
+usecase E as "Expression\nEvaluation"
+usecase fe as "Functonal\nEvaluation"
+usecase ae as "Arithmetic\nEvaluation"
+usecase Err as "Display\nError"
+usecase Sto as "Store\nCalculation"
+
+AC ..> Read : <<include>>
+AC ..> Disp : <<include>>
+AC ..> E : <<include>>
+E ..> fe : <<include>>
+E ..> ae : <<include>>
+Disp ..> Err : <<extend>>
+Disp ..> Sto : <<extend>>
+
+note right of Err
+In case
+of error
+end note
+
+note right of Sto
+If expression 
+is evaluated 
+sucessfully
+end note
+@enduml

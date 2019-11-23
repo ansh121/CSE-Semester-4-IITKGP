@@ -1,0 +1,26 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+skinparam usecase {
+BackgroundColor LightGreen
+BorderColor DarkSlateGray
+ActorBorderColor black
+ArrowColor Olive
+}
+
+actor user
+
+rectangle System {
+usecase AC as "Algebraic Calculator"
+usecase IC as "Integral Calculator"
+usecase DC as "Derivative Calculator"
+usecase MC as "Matrix Calculator"
+usecase Clr as "Clear Screen"
+
+user --> AC
+user --> IC
+user --> DC
+user --> MC
+user --> Clr
+}
+@enduml

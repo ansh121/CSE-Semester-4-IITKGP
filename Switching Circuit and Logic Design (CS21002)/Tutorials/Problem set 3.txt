@@ -1,0 +1,31 @@
+﻿A. Chapter 9 Problems
+---------------------- 
+Prob 9.1
+Prob 9.2
+Prob 9.3   
+Prob 9.4  
+Prob 9.5   
+Prob 9.6  
+Prob 9.7
+Prob 9.10 
+Prob 9.11  
+Prob 9.12  
+Prob 9.13  
+Prob 9.14  
+Prob 9.15  
+Prob 9.16
+
+B. Asynchronous Circuits Problems
+------------------------------------
+
+1. Implement a 3-bit ripple up-counter using JK flip-flop.  Draw the timing diagram (i.e. signals at input and at the output of Q1, Q2 and Q3). Show the relation between the input frequency and the frequency at the output of the last(Q3) flip-flop.
+
+2. Design and Implement a mod-12 asynchronous counter using T f/f.
+
+3. Design and implement a BCD  up/down counter using JK f/f
+
+4. Design (i)  Type D  and (ii) type-T counter that goes through states  0, 2, 4, 6, 0 ….
+
+5. Design a sequence generator to generate the sequence 1011010……..
+
+6. Design a pulse train 10010 using indirect logic.

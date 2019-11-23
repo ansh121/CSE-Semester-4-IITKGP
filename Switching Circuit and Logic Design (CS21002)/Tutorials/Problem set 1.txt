@@ -1,0 +1,23 @@
+Tutorial 1  (Chapter 2, Kohavi)
+------------------------------------
+Prob 3.2
+Prob 3.3   a, b, e, f
+Prob 3.4  c
+Prob 3.5   a, b, d
+Prob 3.6  
+Prob 3.8
+Prob 3.9
+Prob 3.10 c,
+Prob 3.12  a,
+Prob 3.13  a, b, c
+Prob 3.14  a,
+Prob 3.15  a, b, c, f
+Prob 3.16
+Prob 3.17
+Prob 3.18
+Prob 3.19
+Prob 3.21
+Prob 3.23  a, b
+Prob 3.24
+Prob 3.25  a, b, c
+Prob 3.27

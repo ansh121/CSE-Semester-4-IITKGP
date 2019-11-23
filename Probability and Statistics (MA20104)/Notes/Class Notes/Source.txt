@@ -1,0 +1,7 @@
+Estimation - 10.1,10.2,10.3
+Hypothesis - 11.1,11.2,11.3
+Sampling Ditributions - 9.3,9.4,9.5
+Normal Distributions - 7.1 to 7.7
+Continuous Distributions - 6.2 to 6.5
+Discrete Distributions - 5.2 to 5.9
+RV - 2 and 3

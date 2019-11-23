@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+
+skinparam usecase {
+BackgroundColor LightGreen
+BorderColor DarkSlateGray
+ActorBorderColor black
+ArrowColor Olive
+}
+
+usecase MC as "Matrix\nCalculator"
+usecase ReadM as "Read & Store\nMatrix Values"
+usecase ReadE as "Read Input\nExpression"
+usecase Disp as "Display\nResult"
+usecase E as "Expression\nEvaluation"
+usecase Err as "Display\nError"
+usecase Sto as "Store\nCalculation"
+
+MC ..> ReadM : <<include>>
+MC ..> ReadE : <<include>>
+MC ..> E : <<include>>
+MC ..> Disp : <<include>>
+Disp ..> Err : <<extend>>
+Disp ..> Sto : <<extend>>
+
+note right of Err
+In case
+of error
+end note
+
+note right of Sto
+If expression 
+is evaluated 
+sucessfully
+end note
+@enduml

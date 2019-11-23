@@ -1,0 +1,34 @@
+@startuml
+left to right direction
+
+skinparam usecase {
+BackgroundColor LightGreen
+BorderColor DarkSlateGray
+ActorBorderColor black
+ArrowColor Olive
+}
+
+usecase IC as "Integral\nCalculator"
+usecase Read as "Read\nInput"
+usecase Disp as "Display\nResult"
+usecase E as "Integral\nEvaluation"
+usecase Err as "Display\nError"
+usecase Sto as "Store\nCalculation"
+
+IC ..> Read : <<include>>
+IC ..> Disp : <<include>>
+IC ..> E : <<include>>
+Disp ..> Err : <<extend>>
+Disp ..> Sto : <<extend>>
+
+note right of Err
+In case
+of error
+end note
+
+note right of Sto
+If integral 
+is evaluated 
+sucessfully
+end note
+@enduml
